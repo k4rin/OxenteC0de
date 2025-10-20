@@ -1,0 +1,194 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/*root variables */
+:root {
+      --font-color: #323232;
+  --font-color-sub: #666;
+  --bg-color: #fff;
+  --main-color: #323232;
+
+}
+
+section{
+    border-radius: 30px;
+  background: #e0e0e0;
+  box-shadow: 15px 15px 30px #bebebe,
+             -15px -15px 30px #ffffff;
+    padding: 2rem;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/*navbar */
+header {
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav a {
+    color: var(--white);
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--purple-200);
+    text-decoration: underline;
+}
+/*fim da navbar */
+
+/* essa parte toda só da logo  */
+.logo-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-border {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px; /* espessura da borda colorida */
+  border-radius: 50%;
+  background: conic-gradient(
+    #ff7b00,
+    #ff00ff,
+    #007bff,
+    #00ffff,
+    #ff7b00
+  );
+}
+
+.logo-border img {
+  width: 300px; /* tamanho da logo */
+  height: auto;
+  border-radius: 50%;
+  background: white; /* fundo interno */
+  padding: 3px; /* espaço entre imagem e borda */
+}
+/* aqui termina a logo*/
+
+/*card de projetos*/
+/* From Uiverse.io by andrew-demchenk0 */ 
+.card {
+  --font-color: #323232;
+  --bg-color: #e0e0e0;
+  width: 250px;
+  height: 350px;
+  border-radius: 20px;
+  background: var(--bg-color);
+  box-shadow: -9px 9px 18px #5a5a5a,
+              9px -9px 18px #ffffff;
+  display: flex;
+  flex-direction: column;
+  transition: .4s;
+  position: relative;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 0px 10px 2px #5a5a5a;
+}
+
+.card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+  background-color: blueviolet;
+}
+
+.card__descr-wrapper {
+  padding: 15px;
+  display: grid;
+}
+
+.card__title {
+  color: var(--font-color);
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: 900;
+  font-size: 16px;
+}
+
+.card__descr {
+  color: var(--font-color);
+}
+
+.svg {
+  width: 25px;
+  height: 25px;
+  transform: translateY(25%);
+  fill: var(--font-color);
+}
+
+.card__links {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-self: flex-end;
+}
+
+.card__links .link {
+  color: var(--font-color);
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.card__links .link:hover {
+  text-decoration: underline;
+}
+/*fim do card de projetos*/
+
+main{
+    max-width: 1700px;   /* limita a largura máxima da seção */
+  margin: 0 auto; 
+  padding: 4rem 2rem;
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: space-around;
+    align-items: center;
+}
+/*sobre*/
+#about {
+  border-radius: 30px;
+  background: #e0e0e0;
+  box-shadow: 15px 15px 30px #bebebe,
+             -15px -15px 30px #ffffff;
+    padding: 2rem;
+    
+}
+
+#about article {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+#about img { 
+    width: 200px; 
+    flex-shrink: 0; 
+}
+#about p { 
+    flex: 1; 
+    --font-color: #323232;
+    --font-color-sub: #666;
+}
+
+
